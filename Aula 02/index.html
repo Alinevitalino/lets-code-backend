@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Exercícios de Fixação #2</h1>
+            <nav>
+                <ul class="menu">
+                    <li><a>Selecione o exercício</a>
+                        <ul>
+                            <li><a href="#" onclick="Ex01()"> Exercício 01 </a></li>
+                            <li><a href="#" onclick="Ex02()"> Exercício 02 </a></li>
+                            <li><a href="#" onclick="Ex03()"> Exercício 03 </a></li>
+                            <li><a href="#" onclick="Ex04()"> Exercício 04 </a></li>
+                            <li><a href="#" onclick="Ex05()"> Exercício 05 </a></li>
+                            <li><a href="#" onclick="Ex06()"> Exercício 06 </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <script>
+
+        function pesoProvas() {
+            const peso1 = parseInt(prompt("Informe o peso da primeira prova: "));
+            const peso2 = parseInt(prompt("Informe o peso da segunda prova: "));
+
+            return {
+                peso1, 
+                peso2
+            };
+        }
+
+        function dadosAluno() {
+            const matricula = parseInt(prompt("Informe o número da sua matrícula:"));
+            const nota1 = parseFloat(prompt("Informe sua nota da primeira prova:"));
+            const nota2 = parseFloat(prompt("Informe sua nota da segunda prova"));
+
+            return {
+                matricula,
+                nota1,
+                nota2
+            };
+        }
+
+        function calcula_produto(num1, num2) {
+            const produto = num1 * num2;
+            return produto
+        }
+        /* -------------------------------- EXERCÍCIO 01 ---------------------------------*/
+        function Ex01() {
+            const num1 = parseInt(prompt("Informe um número inteiro"));
+            const num2 = parseInt(prompt("Informe outro número inteiro"));
+
+            function calcula_media(num1, num2) {
+                const media = (num1 + num2) / 2;
+                return media
+            }
+
+            alert("A média entre os dois números é:  " + calcula_media(num1, num2));
+            alert("O produto dos dois números é:  " + calcula_produto(num1, num2));
+        }
+        /* -------------------------------- EXERCÍCIO 02 ---------------------------------*/
+        function Ex02() {
+           const {
+               peso1, 
+               peso2
+           } = pesoProvas();
+
+            const {
+                nota1,
+                nota2,
+                matricula
+            } = dadosAluno();
+
+            function calcula_media_ponderada(peso1, nota1, peso2, nota2) {
+                mediaPonderada = (peso1 * nota1 + peso2 * nota2) / 2;
+                return mediaPonderada
+            }
+
+            alert("Sua matrícula é:  " + matricula + "\n" +
+                "Sua média ponderada é:  " + calcula_media_ponderada(peso1, nota1, peso2, nota2));
+        }
+
+        /* -------------------------------- EXERCÍCIO 03 ---------------------------------*/
+        function Ex03() {
+            const {
+               peso1, 
+               peso2
+           } = pesoProvas();
+
+            const {
+                nota1,
+                nota2,
+                matricula
+            } = dadosAluno();
+
+            function calcula_media_ponderada(peso1, peso2, nota1, nota2) {
+                const mediaProduto = (calcula_produto(peso1, nota1) + calcula_produto(peso2, nota2)) / 2;
+                return mediaProduto;
+            }
+
+            alert("Sua matrícula é:  " + matricula + "\n" +
+                "Sua média ponderada é:  " + calcula_media_ponderada(peso1, peso2, nota1, nota2));
+        }
+
+        /* -------------------------------- EXERCÍCIO 04 ---------------------------------*/
+        function Ex04() {
+            const {
+              peso1, 
+              peso2
+            } = pesoProvas();
+
+            const matricula1 = parseInt(prompt("Informe o número da sua matrícula:"));
+            const nota1Aluno1 = parseFloat(prompt("Informe sua nota da primeira prova:"));
+            const nota2Aluno1 = parseFloat(prompt("Informe sua nota da segunda prova"))
+
+            const matricula2 = parseInt(prompt("Informe o número da sua matrícula:"));
+            const nota1Aluno2 = parseFloat(prompt("Informe sua nota da primeira prova:"));
+            const nota2Aluno2 = parseFloat(prompt("Informe sua nota da segunda prova"))
+            
+            function calcula_media_ponderada(peso1, peso2, nota1, nota2) {
+                const mediaProduto = (calcula_produto(peso1, nota1) + calcula_produto(peso2, nota2)) / 2;
+                return mediaProduto;
+            }
+
+            alert("Aluno 1: Sua matrícula é:  " + matricula1 + "\n" +
+                "Sua média ponderada é:  " + calcula_media_ponderada(peso1, peso2, nota1Aluno1, nota2Aluno1) + "\n" +
+                "Aluno 2: Sua matrícula é:  " + matricula2 + "\n" +
+                "Sua média ponderada é:  " + calcula_media_ponderada(peso1, peso2, nota1Aluno2, nota2Aluno2));
+        }
+
+        /* -------------------------------- EXERCÍCIO 05 ---------------------------------*/
+        function Ex05() {
+            const conta = parseFloat(prompt("Informe seus gastos totais no restaurante:"));
+
+            function calcula_valor_total(conta) {
+                const contaTotal = conta * 0.1 + conta;
+                return contaTotal
+            }
+
+            alert("O valor total da sua conta será de: R$" +
+                calcula_valor_total(conta));
+        }
+
+        /* -------------------------------- EXERCÍCIO 06 ---------------------------------*/
+        const Ex06 = () => {
+            const salarioBruto = parseFloat(prompt("Informe seu salário bruto:"));
+
+            function calcula_inss(salarioBruto) {
+                const descontoInss = salarioBruto * 0.1;
+                return descontoInss
+            }
+
+            function calcula_fgts(salarioBruto) {
+                const descontoFgts = salarioBruto * 0.08;
+                return descontoFgts
+            }
+
+            function calcula_plano_saude() {
+                return 100
+            }
+
+            const salarioFinal = salarioBruto - calcula_inss(salarioBruto) - calcula_fgts(salarioBruto) -
+                calcula_plano_saude();
+            alert("INSS: " + calcula_inss(salarioBruto) + "-  FGTS: " + calcula_fgts(salarioBruto) + "-  Plano de saúde: " + calcula_plano_saude() + "\n" +
+                    "O salário final com os descontos será:  R$" + salarioFinal);
+        }
+    </script>
+</body>
+
+</html>
