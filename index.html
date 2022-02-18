@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Exercícios de Fixação #3</h1>
+            <nav>
+                <ul class="menu">
+                    <li><a>Selecione o exercício</a>
+                        <ul>
+                            <li><a href="#" onclick="Ex01()"> Exercício 01 </a></li>
+                            <li><a href="#" onclick="Ex02()"> Exercício 02 </a></li>
+                            <li><a href="#" onclick="Ex03()"> Exercício 03 </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <script>
+        /* -------------------------------- EXERCÍCIO 01 ---------------------------------*/
+        const Ex01 = () => {
+            let count = 0;
+
+            const nota1 = parseFloat(prompt("Informe a primeira nota parcial: "));
+            count++;
+            const nota2 = parseFloat(prompt("Informe a segunda nota parcial: "));
+            count++;
+
+            function calculaMedia(nota1, nota2) {
+                const media = (nota1 + nota2) / count;
+                return media;
+            }
+
+            const media = calculaMedia(nota1, nota2);
+
+            if (media < 7) {
+                alert("O aluno foi REPROVADO")
+            } else if (media >= 7 && media <= 9) {
+                alert("O aluno foi APROVADO")
+            } else {
+                alert("O aluno foi APROVADO COM DISTINÇÃO")
+            }
+        }
+        
+        /* -------------------------------- EXERCÍCIO 02 ---------------------------------*/
+        const Ex02 = () => {
+            const salario = parseFloat(prompt("Informe o salário do colaborador: R$"));
+
+            function calculaReajuste(salario) {
+                if (salario <= 280) {
+                    var percentual = 20;
+                    var aumento = salario * percentual / 100;
+                } else if (salario > 280 && salario < 700) {
+                    var percentual = 15;
+                    var aumento = salario * percentual / 100;
+                } else if (salario > 700 && salario < 1500) {
+                    var percentual = 10;
+                    var aumento = salario * percentual / 100;
+                } else {
+                    var percentual = 5;
+                    var aumento = salario * percentual / 100;
+                }
+
+                return [percentual, aumento];
+            }
+
+            const [percentual, aumento] = calculaReajuste(salario);
+
+            const salarioTotal = salario + aumento;
+
+            alert("O salário antes do reajuste era R$" + salario + "\n" +
+                "O percentual ajustado foi de: " + percentual + "%" + "\n" +
+                "O valor do aumento foi: R$" + aumento + "\n" +
+                "O salário após o aumento é: R$" + salarioTotal
+            );
+        }
+
+        /* -------------------------------- EXERCÍCIO 03 ---------------------------------*/
+        const Ex03 = () => {
+            const valorHora = parseFloat(prompt("Informe o valor de sua hora de trabalho: R$"));
+            const horasTrabalhadas = parseFloat(prompt("Informe quantas horas trabalhadas no mês: "));
+
+            const salarioBruto = valorHora * horasTrabalhadas;
+
+            function calculaImposto(salarioBruto) {
+                if (salarioBruto <= 900) {
+                    var ir = 0;
+                    var valorDoIr = salarioBruto * ir / 100;
+                } else if (salarioBruto > 900 && salarioBruto <= 1500) {
+                    var ir = 5;
+                    var valorDoIr = salarioBruto * ir / 100;
+                } else if (salarioBruto > 1500 && salario <= 2500) {
+                    var ir = 10;
+                    var valorDoIr = salarioBruto * ir / 100;
+                } else {
+                    var ir = 20;
+                    var valorDoIr = salarioBruto * ir / 100;
+                }
+
+                return [ir, valorDoIr];
+            }
+
+            const [ir, valorDoIr] = calculaImposto(salarioBruto);
+            const inss = salarioBruto * 0.1;
+            const fgts = salarioBruto * 0.11;
+            const totalDescontos = valorDoIr + inss;
+            const salarioLiquido = salarioBruto - totalDescontos;
+
+            alert("O salário bruto é: R$" + salarioBruto + "\n" +
+                "O percentual do Imposto de Renda foi " + ir + "%" + ", com o valor de: R$ " + valorDoIr + "\n" +
+                "O percentual do INSS é 10%, com o valor de: R$ " + inss + "\n" +
+                "O FGTS equivale a 11% com o valor de: R$" + fgts + "\n" +
+                "Total de descontos: R$" + totalDescontos + "\n" +
+                "O salário líquido resultou em: R$" + salarioLiquido
+            );
+        }
+    </script>
+</body>
+
+</html>
