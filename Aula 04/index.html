@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Exercícios de Fixação #4</h1>
+            <nav>
+                <ul class="menu">
+                    <li><a>Selecione o exercício</a>
+                        <ul>
+                            <li><a href="#" onclick="Ex01()"> Exercício 01 </a></li>
+                            <li><a href="#" onclick="Ex02()"> Exercício 02 </a></li>
+                            <li><a href="#" onclick="Ex03()"> Exercício 03 </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <script>
+        /* -------------------------------- EXERCÍCIO 01 ---------------------------------*/
+        const Ex01 = () => {
+
+            document.write ("Os números ímpares de 1 a 50 são: " + "<br>");
+
+            for (i = 1; i <= 50; i += 2) {
+                document.write (i + "<br>");
+            }  
+        }
+        
+        /* -------------------------------- EXERCÍCIO 02 ---------------------------------*/
+        const Ex02 = () => {
+            let numero = parseInt(prompt("Informe um número inteiro entre 1 a 10 que deseje ver a tabuada:"));
+
+            if (numero <1 || numero>10) {
+                alert("Insira um número válido");
+                return 
+            } 
+
+            document.write("Tabuada de " + numero + ":" + "<br />");
+
+            for (i = 1; i <= 10; i++ ) {
+                document.write(numero + " x " + i + " = " + numero*i + "<br />");
+            }
+        }
+
+        /* -------------------------------- EXERCÍCIO 03 ---------------------------------*/
+        const Ex03 = () => {
+            
+            let lista = []
+
+            alert("Informe 5 números para pegarmos o maior e o menor valor da lista");
+
+            for (i = 1; i <= 5; i++) { 
+                let numero = parseFloat(prompt("Informe um número: "));
+                lista.push(numero);
+            }
+
+           let max = Math.max(...lista);
+           let min = Math.min(...lista);
+
+            alert("O maior número foi: " + max + "\n" + 
+                "O menor número foi: " + min + "\n" +
+                "Os valores da lista foram: " + "(" + lista + ")");
+
+        }
+    </script>
+</body>
+
+</html>
