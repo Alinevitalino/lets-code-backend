@@ -1,0 +1,308 @@
+[
+    {
+        "palavra1": {
+            "nome": "BRASIL",
+            "categoria": "LUGARES"
+        }
+    },
+    {
+        "palavra2": {
+            "nome": "CANADA",
+            "categoria": "LUGARES"
+        }
+    },
+    {
+        "palavra3": {
+            "nome": "CHILE",
+            "categoria": "LUGARES"
+        }
+    },
+    {
+        "palavra4": {
+            "nome": "ARGENTINA",
+            "categoria": "LUGARES"
+        }
+    },
+    {
+        "palavra5": {
+            "nome": "JAPAO",
+            "categoria": "LUGARES"
+        }
+    },
+    {
+        "palavra6": {
+            "nome": "INGLATERRA",
+            "categoria": "LUGARES"
+        }
+    },
+    {
+        "palavra7": {
+            "nome": "RUSSIA",
+            "categoria": "LUGARES"
+        }
+    },
+    {
+        "palavra8": {
+            "nome": "UCRANIA",
+            "categoria": "LUGARES"
+        }
+    },
+    {
+        "palavra9": {
+            "nome": "COLOMBIA",
+            "categoria": "LUGARES"
+        }
+    },
+    {
+        "palavra10": {
+            "nome": "NORUEGA",
+            "categoria": "LUGARES"
+        }
+    },
+    {
+        "palavra11": {
+            "nome": "CARRO",
+            "categoria": "TRANSPORTE"
+        }
+    },
+    {
+        "palavra12": {
+            "nome": "MOTOCICLETA",
+            "categoria": "TRANSPORTE"
+        }
+    },
+    {
+        "palavra13": {
+            "nome": "NAVIO",
+            "categoria": "TRANSPORTE"
+        }
+    },
+    {
+        "palavra14": {
+            "nome": "HELICOPTERO",
+            "categoria": "TRANSPORTE"
+        }
+    },
+    {
+        "palavra15": {
+            "nome": "LANCHA",
+            "categoria": "TRANSPORTE"
+        }
+    },
+    {
+        "palavra16": {
+            "nome": "BARCO",
+            "categoria": "TRANSPORTE"
+        }
+    },
+    {
+        "palavra17": {
+            "nome": "AERONAVE",
+            "categoria": "TRANSPORTE"
+        }
+    },
+    {
+        "palavra18": {
+            "nome": "TREM",
+            "categoria": "TRANSPORTE"
+        }
+    },
+    {
+        "palavra19": {
+            "nome": "BICICLETA",
+            "categoria": "TRANSPORTE"
+        }
+    },
+    {
+        "palavra20": {
+            "nome": "ONIBUS",
+            "categoria": "TRANSPORTE"
+        }
+    },
+    {
+        "palavra21": {
+            "nome": "FACA",
+            "categoria": "OBJETOS"
+        }
+    },
+    {
+        "palavra22": {
+            "nome": "COPO",
+            "categoria": "OBJETOS"
+        }
+    },
+    {
+        "palavra23": {
+            "nome": "CADEIRA",
+            "categoria": "OBJETOS"
+        }
+    },
+    {
+        "palavra24": {
+            "nome": "REGUA",
+            "categoria": "OBJETOS"
+        }
+    },
+    {
+        "palavra25": {
+            "nome": "TECLADO",
+            "categoria": "OBJETOS"
+        }
+    },
+    {
+        "palavra26": {
+            "nome": "COMPUTADOR",
+            "categoria": "OBJETOS"
+        }
+    },
+    {
+        "palavra27": {
+            "nome": "CELULAR",
+            "categoria": "OBJETOS"
+        }
+    },
+    {
+        "palavra28": {
+            "nome": "COLHER",
+            "categoria": "OBJETOS"
+        }
+    },
+    {
+        "palavra29": {
+            "nome": "PANELA",
+            "categoria": "OBJETOS"
+        }
+    },
+    {
+        "palavra30": {
+            "nome": "CHAVE",
+            "categoria": "OBJETOS"
+        }
+    },
+    {
+        "palavra31": {
+            "nome": "BANANA",
+            "categoria": "ALIMENTOS"
+        }
+    },
+    {
+        "palavra32": {
+            "nome": "BISCOITO",
+            "categoria": "ALIMENTOS"
+        }
+    },
+    {
+        "palavra33": {
+            "nome": "PUDIM",
+            "categoria": "ALIMENTOS"
+        }
+    },
+    {
+        "palavra34": {
+            "nome": "CHOCOLATE",
+            "categoria": "ALIMENTOS"
+        }
+    },
+    {
+        "palavra35": {
+            "nome": "ESPINAFRE",
+            "categoria": "ALIMENTOS"
+        }
+    },
+    {
+        "palavra36": {
+            "nome": "SANDUICHE",
+            "categoria": "ALIMENTOS"
+        }
+    },
+    {
+        "palavra37": {
+            "nome": "LASANHA",
+            "categoria": "ALIMENTOS"
+        }
+    },
+    {
+        "palavra38": {
+            "nome": "BROCOLIS",
+            "categoria": "ALIMENTOS"
+        }
+    },
+    {
+        "palavra39": {
+            "nome": "FEIJAO",
+            "categoria": "ALIMENTOS"
+        }
+    },
+    {
+        "palavra40": {
+            "nome": "TAPIOCA",
+            "categoria": "ALIMENTOS"
+        }
+    },
+    {
+        "palavra41": {
+            "nome": "CALANGO",
+            "categoria": "ANIMAIS"
+        }
+    },
+    {
+        "palavra42": {
+            "nome": "MACACO",
+            "categoria": "ANIMAIS"
+        }
+    },
+    {
+        "palavra43": {
+            "nome": "CACHORRO",
+            "categoria": "ANIMAIS"
+        }
+    },
+    {
+        "palavra44": {
+            "nome": "ELEFANTE",
+            "categoria": "ANIMAIS"
+        }
+    },
+    {
+        "palavra45": {
+            "nome": "GIRAFA",
+            "categoria": "ANIMAIS"
+        }
+    },
+    {
+        "palavra46": {
+            "nome": "HIPOPOTAMO",
+            "categoria": "ANIMAIS"
+        }
+    },
+    {
+        "palavra47": {
+            "nome": "JACARE",
+            "categoria": "ANIMAIS"
+        }
+    },
+    {
+        "palavra48": {
+            "nome": "CALOPSITA",
+            "categoria": "ANIMAIS"
+        }
+    },
+    {
+        "palavra49": {
+            "nome": "PEIXE",
+            "categoria": "ANIMAIS"
+        }
+    },
+    {
+        "palavra50": {
+            "nome": "TARTARUGA",
+            "categoria": "ANIMAIS"
+        }
+    },
+    {
+        "palavra51": {
+            "nome": "GATO",
+            "categoria": "ANIMAIS"
+        }
+    }
+]
