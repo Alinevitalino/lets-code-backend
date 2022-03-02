@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Exercícios de Fixação #5</h1>
+            <nav>
+                <ul class="menu">
+                    <li><a>Selecione o exercício</a>
+                        <ul>
+                            <li><a href="#" onclick="Ex01()"> Exercício 01 </a></li>
+                            <li><a href="#" onclick="Ex02()"> Exercício 02 </a></li>
+                            <li><a href="#" onclick="Ex03()"> Exercício 03 </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <script>
+        /* -------------------------------- EXERCÍCIO 01 ---------------------------------*/
+        const Ex01 = () => {
+
+            let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+            function numerosPares(x) {
+                //document.getElementById("2").innerHTML = x;
+                //var x = 0;
+
+                if (x >= 10) {
+                    return;
+                } else {
+                    if (numeros[x] % 2 == 0) {
+                        alert(numeros[x]);
+                    }
+                    numerosPares(x + 1);
+                }
+            }
+            numerosPares(0);
+        }
+
+        /* -------------------------------- EXERCÍCIO 02 ---------------------------------*/
+        const Ex02 = () => {
+
+            num = parseInt(prompt("Informe um número inteiro: "));
+
+            function fibonacci(num) {
+                if (num <= 1) return 1;
+                return fibonacci(num - 1) + fibonacci(num - 2);
+            }
+            alert("O resultado de Fibonacci será: " + fibonacci(num));
+        }
+        /* -------------------------------- EXERCÍCIO 03 ---------------------------------*/
+        const Ex03 = () => {
+            const funcionario = [{
+                nome: 'Luke',
+                area: 'Financeiro',
+                salario: 1500
+            }, {
+                nome: 'Han',
+                area: 'Financeiro',
+                salario: 1200
+            }, {
+                nome: 'Ben',
+                area: 'Marketing',
+                salario: 2000
+            }, {
+                nome: 'Leia',
+                area: 'Marketing',
+                salario: 1750
+            }, {
+                nome: 'Rey',
+                area: 'Financeiro',
+                salario: 1000
+            }]
+
+            let area = prompt("Informe qual a área desejada (Financeiro ou Marketing):");
+            let aumento = parseFloat(prompt("Informe a porcentagem a ser adicionada nos salários"));
+
+            const salarioTotal = funcionario
+                // Filtro de quantos funcionários são do Financeiro
+                .filter(rh => (rh.area === area))
+                //Adicionando incremento no salario de cada um deles
+                .map(item => item.salario *= (1 + (aumento / 100)))
+                //somatorio
+                .reduce((total, valorAtual) => total + valorAtual);
+            alert(salarioTotal);
+        }
+    </script>
+</body>
+
+</html>
